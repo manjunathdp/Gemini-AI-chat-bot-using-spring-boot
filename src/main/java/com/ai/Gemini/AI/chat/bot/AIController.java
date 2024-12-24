@@ -18,7 +18,7 @@ public class AIController {
     AIService aiService;
 
     @PostMapping("/ask")
-    ResponseEntity<String> getAnswer(@RequestBody Map<String,String> payload) {
+    ResponseEntity<String> getAnswer(@RequestBody Map<String, String> payload) {
         String answer = aiService.getAnswer(payload.get("question"));
         return new ResponseEntity<>(answer, HttpStatus.OK);
     }

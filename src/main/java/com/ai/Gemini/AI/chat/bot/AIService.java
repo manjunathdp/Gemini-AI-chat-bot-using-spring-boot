@@ -11,6 +11,15 @@ public class AIService {
     @Value("${api.key}")
     String apiKey;
     public String getAnswer(String question) {
-       return "";
+//        {
+//            "contents": [{
+//            "parts":[{
+//                "text":"Explain how AI works"
+//            }]
+//        }]
+//        }
+
+
+       return "request reached";
     }
 }
